@@ -33,5 +33,17 @@
     <p>There is a message in the music.</p>
     <p>This site might help <a href="https://n3rd10.github.io/audio-reactive-video/" target="_blank">n3rd10.github.io/audio-reactive-video</a></p>
     <p>Think in eights</p>
+    <button id="playButton">Play Music</button>
+<audio id="music" src="Hello, World!.wav"></audio>
+<script>
+    document.getElementById('playButton').addEventListener('click', function() {
+        var music = document.getElementById('music');
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    });
+</script>
 </body>
 </html>
